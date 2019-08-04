@@ -23,6 +23,8 @@ local.properties
 
 ## IntelliJ
 .idea/
+target/
+*.iml
 
 # External tool builders
 .externalToolBuilders/
