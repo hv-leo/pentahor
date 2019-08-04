@@ -28,6 +28,7 @@ import org.pentaho.di.core.CheckResult;
 import org.pentaho.di.core.CheckResultInterface;
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.Counter;
+import org.pentaho.di.core.annotations.Step;
 import org.pentaho.di.core.database.DatabaseMeta;
 import org.pentaho.di.core.exception.KettleException;
 import org.pentaho.di.core.exception.KettleStepException;
@@ -56,6 +57,13 @@ import de.dekarlab.pentahor.PRVariable;
  * Calc R step.
  * 
  */
+@Step(
+		id="RKettlePlugin",
+		name="R Kettle Step",
+		image="rlogo.png",
+		description="R Executor Step",
+		i18nPackageName = "R Executor",
+		categoryDescription = "i18n:org.pentaho.di.trans.step:BaseStep.Category.Transform")
 public class PRCalcMeta extends BaseStepMeta implements StepMetaInterface {
 
 	private String scriptFilePath;

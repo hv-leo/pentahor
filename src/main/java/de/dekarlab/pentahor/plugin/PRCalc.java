@@ -23,24 +23,16 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.util.Arrays;
 
-import org.pentaho.di.core.exception.KettleException;
-import org.pentaho.di.core.row.RowDataUtil;
-import org.pentaho.di.core.row.RowMeta;
-import org.pentaho.di.core.row.RowMetaInterface;
-import org.pentaho.di.core.row.ValueMeta;
-import org.pentaho.di.core.row.ValueMetaInterface;
-import org.pentaho.di.trans.Trans;
-import org.pentaho.di.trans.TransMeta;
-import org.pentaho.di.trans.step.BaseStep;
-import org.pentaho.di.trans.step.StepDataInterface;
-import org.pentaho.di.trans.step.StepInterface;
-import org.pentaho.di.trans.step.StepMeta;
-import org.pentaho.di.trans.step.StepMetaInterface;
 
 import de.dekarlab.pentahor.PRColumnVariable;
 import de.dekarlab.pentahor.PRPrintStream;
 import de.dekarlab.pentahor.PRVariable;
 import de.dekarlab.pentahor.RRunner;
+import org.pentaho.di.core.exception.KettleException;
+import org.pentaho.di.core.row.*;
+import org.pentaho.di.trans.Trans;
+import org.pentaho.di.trans.TransMeta;
+import org.pentaho.di.trans.step.*;
 
 /**
  *
@@ -60,8 +52,8 @@ public class PRCalc extends BaseStep implements StepInterface {
 	 * @param trans
 	 */
 	public PRCalc(final StepMeta stepMeta,
-			final StepDataInterface stepDataInterface, final int copyNr,
-			final TransMeta transMeta, final Trans trans) {
+				  final StepDataInterface stepDataInterface, final int copyNr,
+				  final TransMeta transMeta, final Trans trans) {
 		super(stepMeta, stepDataInterface, copyNr, transMeta, trans);
 	}
 

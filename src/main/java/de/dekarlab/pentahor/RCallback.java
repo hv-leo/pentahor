@@ -19,8 +19,10 @@
 
 package de.dekarlab.pentahor;
 
-import org.rosuda.JRI.RMainLoopCallbacks;
+//import org.rosuda.JRI.RMainLoopCallbacks;
 import org.rosuda.JRI.Rengine;
+import org.rosuda.JRI.RMainLoopCallbacks;
+//import org.rosuda.REngine.REngine;
 
 public class RCallback implements RMainLoopCallbacks {
 
