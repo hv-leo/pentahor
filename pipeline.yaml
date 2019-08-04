@@ -1,0 +1,8 @@
+type: java
+targetFolder: target/knowbi-kettle-r-executor
+runTests: false
+notifySlack: true
+saveArtifacts: true
+buildsToKeep: 5
+daysToKeep:
+slackChannel: jenkins
